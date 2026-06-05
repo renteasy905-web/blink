@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f2f7f3;
+color:#333;
+}
+
+/* HERO */
+
+.hero{
+height:520px;
+position:relative;
+overflow:hidden;
+}
+
+.hero-bg{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+}
+
+.hero::after{
+content:"";
+position:absolute;
+inset:0;
+background:
+linear-gradient(
+rgba(15,45,20,.15),
+rgba(10,18,12,.65)
+);
+}
+
+/* CENTER IMAGE */
+
+.hero-content{
+position:absolute;
+left:50%;
+top:50%;
+transform:translate(-50%,-50%);
+z-index:5;
+}
+
+.hero-content img{
+
+width:220px;
+
+max-width:80vw;
+
+padding:16px;
+
+border-radius:28px;
+
+background:
+rgba(255,255,255,.95);
+
+backdrop-filter:blur(20px);
+
+box-shadow:
+0 30px 80px rgba(0,0,0,.30);
+
+transition:.35s;
+}
+
+.hero-content img:hover{
+
+transform:
+scale(1.03);
+
+}
+
+/* CONTENT */
+
+.container{
+
+max-width:950px;
+
+margin:auto;
+
+margin-top:-100px;
+
+padding:0 24px 80px;
+
+position:relative;
+
+z-index:10;
+}
+
+.card{
+
+background:
+rgba(255,255,255,.82);
+
+backdrop-filter:blur(30px);
+
+border:1px solid rgba(255,255,255,.6);
+
+padding:70px;
+
+border-radius:34px;
+
+box-shadow:
+0 40px 100px rgba(0,0,0,.08);
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.card::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:6px;
+
+background:
+linear-gradient(
+90deg,
+#97dd9e,
+#52aa69,
+#97dd9e
+);
+
+}
+
+.title{
+
+font-size:44px;
+
+font-weight:700;
+
+text-align:center;
+
+color:#204c32;
+
+margin-bottom:10px;
+
+letter-spacing:-1px;
+
+}
+
+.subtitle{
+
+text-align:center;
+
+font-size:15px;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+color:#8c9f92;
+
+margin-bottom:38px;
+
+}
+
+.line{
+
+width:90px;
+
+height:5px;
+
+margin:0 auto 45px;
+
+border-radius:50px;
+
+background:
+linear-gradient(
+90deg,
+#90d998,
+#4fa767
+);
+
+}
+
+.content{
+
+display:flex;
+
+flex-direction:column;
+
+gap:18px;
+
+max-width:740px;
+
+margin:auto;
+
+}
+
+.content p{
+
+background:
+linear-gradient(
+145deg,
+#ffffff,
+#f8fbf8
+);
+
+padding:28px 34px;
+
+border-radius:22px;
+
+font-size:18px;
+
+line-height:2;
+
+color:#4f5652;
+
+text-align:center;
+
+box-shadow:
+0 15px 35px rgba(0,0,0,.05);
+
+border-left:5px solid #79c28a;
+
+transition:.35s;
+
+}
+
+.content p:hover{
+
+transform:
+translateY(-4px);
+
+box-shadow:
+0 25px 50px rgba(0,0,0,.08);
+
+}
+
+.content p:last-child{
+
+background:
+linear-gradient(
+135deg,
+#eaf8ee,
+#ffffff
+);
+
+font-weight:500;
+
+color:#214830;
+
+font-size:19px;
+
+}
+
+@media(max-width:768px){
+
+.hero{
+height:360px;
+}
+
+.hero-content img{
+width:160px;
+padding:12px;
+}
+
+.container{
+margin-top:-70px;
+}
+
+.card{
+padding:34px;
+}
+
+.title{
+font-size:32px;
+}
+
+.content p{
+
+padding:22px;
+
+font-size:16px;
+
+line-height:1.9;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<img
+class="hero-bg"
+src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+alt="Hills">
+
+<div class="hero-content">
+
+<!-- YOUR IMAGE -->
+<img src="we.jpg" alt="Image">
+
+</div>
+
+</section>
+
+
+<!-- CONTENT -->
+
+<div class="container">
+
+<div class="card">
+
+<div class="title">
+For You
+</div>
+
+<div class="subtitle">
+Every word comes from my heart
+</div>
+
+<div class="line"></div>
+
+<div class="content">
+
+<p>
+I was never trying to doubt you, and I never wanted to hurt you. You are too special to me, and my intention was never wrong
+</p>
+
+<p>
+When I saw your phone was busy, I became confused and worried. Without understanding the full situation, I ended up asking questions.
+</p>
+
+<p>
+Maybe my questions made you feel bad, and maybe they sounded like doubt. But my heart only wanted clarity, not distance between us
+</p>
+
+<p>
+If my words hurt you, I am truly sorry for that. Causing you pain was never my intention, and I regret making you upset.
+</p>
+
+<p>
+Please forgive me, Sonu. I care about you deeply, and I hope we can smile again together. You will always be my Baby and my Maa.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
