@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Love PIN</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1920&auto=format&fit=crop') center center/cover no-repeat;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.15);
+}
+
+.card{
+    position:relative;
+    z-index:1;
+    width:320px;
+    padding:30px;
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(10px);
+    border-radius:25px;
+    text-align:center;
+}
+
+.heart{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:14px;
+    border:none;
+    outline:none;
+    border-radius:15px;
+    text-align:center;
+    font-size:18px;
+    margin-bottom:15px;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:15px;
+    background:#ff6b81;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:0.9;
+}
+</style>
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<div class="card">
+    <div class="heart">❤️</div>
+
+    <input type="password" id="pin" placeholder="PIN">
+
+    <button onclick="checkPin()">Next</button>
+</div>
+
+<script>
+function checkPin(){
+    if(document.getElementById('pin').value === '0204'){
+        window.location.href = 'page2.html';
+    }else{
+        alert('Incorrect PIN');
+    }
+}
+</script>
+
+</body>
+</html>
